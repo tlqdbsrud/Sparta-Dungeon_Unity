@@ -41,7 +41,7 @@ public class MenuBtn : MonoBehaviour
             {
                 menuBtn[0].gameObject.SetActive(false);
                 menuBtn[2].gameObject.SetActive(false);
-                menuBtn[3].gameObject.SetActive(false);
+                menuBtn[4].gameObject.SetActive(false);
             }
         }
         else if(menuIndex == 1) // 뒤로가기 버튼
@@ -53,7 +53,7 @@ public class MenuBtn : MonoBehaviour
             {
                 menuBtn[0].gameObject.SetActive(true);
                 menuBtn[2].gameObject.SetActive(true);
-                menuBtn[3].gameObject.SetActive(true);
+                menuBtn[4].gameObject.SetActive(true);
             }
         }
         else if(menuIndex == 2) // 내 아이템(인벤토리)
