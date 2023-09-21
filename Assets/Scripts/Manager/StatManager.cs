@@ -28,6 +28,7 @@ public class StatManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
     // attack 텍스트 업데이트
     public void UpdateAttackText(int attackValue)

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Punch
   m_EditorClassIdentifier: 
   itemName: "\uB0E5\uB0E5 \uD380\uCE58"
-  type: "\uACF5\uACA9 \uBB34\uAE30"
-  Attack: 20
+  itemtype: 0
+  attack: 20
   defense: 0
   aboutItem: "\uBE60\uB978 \uC18D\uB3C4\uB85C \uAC15\uD55C \uD798\uC744 \uBC1C\uD718\uD558\uB294
     \uD380\uCE58"

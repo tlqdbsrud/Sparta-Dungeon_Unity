@@ -6,7 +6,6 @@ using TMPro;
 
 public class Attack : Stat
 {
-
     private void Start()
     {
         StatManager.instance.UpdateAttackText(attack);

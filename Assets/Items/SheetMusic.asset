@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SheetMusic
   m_EditorClassIdentifier: 
   itemName: "\uACE8\uACE8\uC1A1 \uC545\uBCF4"
-  type: "\uBC29\uC5B4 \uBB34\uAE30"
-  Attack: 0
+  itemType: 1
+  attack: 0
   defense: 5
   aboutItem: "\uC2E0\uB098\uB294 \uC74C\uC545\uC774 \uB2F4\uAE34 \uC545\uBCF4"
   icon: {fileID: 21300000, guid: dbfbf34d0e22d4b4d8405ffa07369b92, type: 3}

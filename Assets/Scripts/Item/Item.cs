@@ -12,7 +12,7 @@ public enum ItemType
 public class Item : ScriptableObject
 {
     public string itemName;
-    public ItemType itemtype;
+    public ItemType itemType;
     public int attack;
     public int defense;
     public string aboutItem;

@@ -46,6 +46,9 @@ public class InventoryManager : MonoBehaviour
             GameObject obj = Instantiate(ItemPrefab, ItemContent); // 프리팹, 위치
             var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
             itemIcon.sprite = item.icon;
+
+            var itemBtnScript = obj.GetComponent<ItemIconBtn>();
+            itemBtnScript.SetItem(item); //  아이템 정보 전달
         }
     }
 

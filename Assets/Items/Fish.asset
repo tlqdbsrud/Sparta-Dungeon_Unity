@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Fish
   m_EditorClassIdentifier: 
   itemName: "\uB4F1\uD478\uB978 \uC0DD\uC120"
-  type: "\uC74C\uC2DDA"
-  Attack: 10
+  itemtype: 0
+  attack: 10
   defense: 0
   aboutItem: "\uBBFC\uCCA9\uC131\uC744 \uB192\uC5EC\uC8FC\uB294 \uC0DD\uC120"
   icon: {fileID: 21300000, guid: 3fb8eaad86d34854388094c9443cbeda, type: 3}

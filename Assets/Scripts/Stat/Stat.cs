@@ -16,9 +16,4 @@ public class Stat : MonoBehaviour
     protected int gold = 20000; // µ·
 
     
-
-    private void Start()
-    {
-       
-    }
 }
