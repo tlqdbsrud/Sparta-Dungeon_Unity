@@ -42,7 +42,7 @@ public class ItemIconBtn : MonoBehaviour
                 else if (item.itemType == ItemType.Defense)
                 {
                     Debug.Log("¹æ¾î");
-                    StatManager.instance.UpdateAttackText(StatManager.instance.defense + item.defense);
+                    StatManager.instance.UpdateDefenseText(StatManager.instance.defense + item.defense);
                 }
 
             }
@@ -57,7 +57,7 @@ public class ItemIconBtn : MonoBehaviour
                 }
                 else if (item.itemType == ItemType.Defense)
                 {
-                    StatManager.instance.UpdateAttackText(StatManager.instance.defense - item.defense);
+                    StatManager.instance.UpdateDefenseText(StatManager.instance.defense - item.defense);
                 }
             }
         }

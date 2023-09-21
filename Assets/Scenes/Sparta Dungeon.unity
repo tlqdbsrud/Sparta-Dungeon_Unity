@@ -728,7 +728,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 12
+  m_text: 6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71aa0092eee685346a44bf44aab31dd4, type: 2}
   m_sharedMaterial: {fileID: -1906297889372601608, guid: 71aa0092eee685346a44bf44aab31dd4, type: 2}
@@ -3988,6 +3988,8 @@ MonoBehaviour:
   expTxt: {fileID: 1254317491}
   expBar: {fileID: 132934485}
   goldTxt: {fileID: 619922694}
+  attack: 0
+  defense: 0
 --- !u!1 &1882577164
 GameObject:
   m_ObjectHideFlags: 0
