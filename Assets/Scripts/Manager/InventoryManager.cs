@@ -9,13 +9,14 @@ public class InventoryManager : MonoBehaviour
     public List<Item> Items = new List<Item>();
 
     public Transform ItemContent;
-    public GameObject InventoryItem;
+    public GameObject InventoryItem; // 프리팹
 
     // 싱글톤 패턴
     private void Awake()
     {
         Instance = this;
     }
+
     public void Add(Item item)
     {
         Items.Add(item);
@@ -28,12 +29,27 @@ public class InventoryManager : MonoBehaviour
 
     public void ListItems()
     {
-        foreach(var item in Items)
+        // 열기 전에 지우기
+        foreach (Transform item in ItemContent)
         {
-            GameObject obj = Instantiate(InventoryItem, ItemContent);
-            var itemIcon = obj.transform.Find("Item/Icon").GetComponent<Image>();
+            Destroy(item.gameObject);
+        }
 
+        foreach (var item in Items)
+        {
+            GameObject obj = Instantiate(InventoryItem, ItemContent); // 프리팹, 위치
+            var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
             itemIcon.sprite = item.icon;
         }
+    }
+
+    public void OnClickItemIcon()
+    {
+
+        Debug.Log("클릭1");
+        //Transform itemIcon = item.transform.Find("ItemIcon");
+        //foreach(Transform item in )
+        transform.Find("Equip").gameObject.SetActive(true);
+
     }
 }
