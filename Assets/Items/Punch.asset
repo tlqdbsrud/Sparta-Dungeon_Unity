@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: "\uB0E5\uB0E5 \uD380\uCE58"
   type: "\uACF5\uACA9 \uBB34\uAE30"
-  Value: 15
+  Attack: 20
+  defense: 0
   aboutItem: "\uBE60\uB978 \uC18D\uB3C4\uB85C \uAC15\uD55C \uD798\uC744 \uBC1C\uD718\uD558\uB294
     \uD380\uCE58"
   icon: {fileID: 21300000, guid: e17415212aa46b540a7a866489fb12f5, type: 3}

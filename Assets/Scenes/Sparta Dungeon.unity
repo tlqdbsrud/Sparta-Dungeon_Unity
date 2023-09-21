@@ -616,19 +616,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 396956327}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1236990589}
-        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
-        m_MethodName: ListItems
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &396956327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2718,7 +2706,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ef338b7ecc6af7f4ca9c9832fdbc8f7c, type: 2}
   - {fileID: 11400000, guid: e90b53b909f39f24d8c7928f7406ba85, type: 2}
   ItemContent: {fileID: 1882577165}
-  InventoryItem: {fileID: 6118714419891347544, guid: fe064b7fc35100244bb1980d1ca934a4, type: 3}
+  ItemPrefab: {fileID: 6118714419891347544, guid: fe064b7fc35100244bb1980d1ca934a4, type: 3}
 --- !u!4 &1236990590
 Transform:
   m_ObjectHideFlags: 0

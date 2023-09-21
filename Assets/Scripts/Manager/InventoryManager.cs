@@ -9,12 +9,17 @@ public class InventoryManager : MonoBehaviour
     public List<Item> Items = new List<Item>();
 
     public Transform ItemContent;
-    public GameObject InventoryItem; // ÇÁ¸®ÆÕ
+    public GameObject ItemPrefab; // ItemBtnÇÁ¸®ÆÕ
 
     // ½Ì±ÛÅæ ÆÐÅÏ
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+        ListItems();
     }
 
     public void Add(Item item)
@@ -30,14 +35,15 @@ public class InventoryManager : MonoBehaviour
     public void ListItems()
     {
         // ¿­±â Àü¿¡ Áö¿ì±â
-        foreach (Transform item in ItemContent)
+        /*foreach (Transform item in ItemContent)
         {
-            Destroy(item.gameObject);
-        }
+            item.gameObject.SetActive(false);
+            //Destroy(item.gameObject);
+        }*/
 
         foreach (var item in Items)
         {
-            GameObject obj = Instantiate(InventoryItem, ItemContent); // ÇÁ¸®ÆÕ, À§Ä¡
+            GameObject obj = Instantiate(ItemPrefab, ItemContent); // ÇÁ¸®ÆÕ, À§Ä¡
             var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
             itemIcon.sprite = item.icon;
         }
@@ -46,10 +52,7 @@ public class InventoryManager : MonoBehaviour
     public void OnClickItemIcon()
     {
 
-        Debug.Log("Å¬¸¯1");
-        //Transform itemIcon = item.transform.Find("ItemIcon");
-        //foreach(Transform item in )
-        transform.Find("Equip").gameObject.SetActive(true);
+        
 
     }
 }

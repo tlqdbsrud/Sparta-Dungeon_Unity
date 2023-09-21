@@ -11,7 +11,9 @@ public class StatManager : MonoBehaviour
     public TMP_Text expTxt;
     public Slider expBar;
     public TMP_Text goldTxt;
-   
+
+    public int attack;
+    public int defense;
 
     // UI Manager 싱글톤 패턴
     public static StatManager instance;
@@ -30,13 +32,14 @@ public class StatManager : MonoBehaviour
     // attack 텍스트 업데이트
     public void UpdateAttackText(int attackValue)
     {
-        //attackTxt = GetComponent<TMP_Text>();
+        attack = attackValue;
         attackTxt.text = attackValue.ToString();
     }
 
     // 방어력 텍스트 업데이트
     public void UpdateDefenseText(int defenseValue)
     {
+        defense = defenseValue;
         defenseTxt.text = defenseValue.ToString();
     }
     
