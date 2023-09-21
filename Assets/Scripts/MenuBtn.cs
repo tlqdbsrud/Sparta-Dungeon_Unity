@@ -56,13 +56,13 @@ public class MenuBtn : MonoBehaviour
                 menuBtn[4].gameObject.SetActive(true);
             }
         }
-        else if(menuIndex == 2) // 내 아이템(인벤토리)
+        else if(menuIndex == 2) // 내 아이템(인벤토리) 버튼
         {
             menuCanvas[1].gameObject.SetActive(true); // 내 아이템(인벤토리) 활성화
         }
-        else if (menuIndex == 3) // 내 아이템(인벤토리)
+        else if (menuIndex == 3) // 내 아이템(인벤토리) 뒤로가기
         {
-            menuCanvas[1].gameObject.SetActive(false); // 내 아이템(인벤토리) 활성화
+            menuCanvas[1].gameObject.SetActive(false); // 내 아이템(인벤토리) 비활성화
         }
     }
 }

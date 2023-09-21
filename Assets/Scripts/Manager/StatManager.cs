@@ -39,6 +39,12 @@ public class StatManager : MonoBehaviour
     {
         defenseTxt.text = defenseValue.ToString();
     }
+    
+    // exp 슬라이더 업데이트
+    public void UpdateExpTxt(int expValue)
+    {
+        expTxt.text = expValue.ToString();
+    }
 
     // exp 슬라이더 업데이트
     public void UpdateExpSlider(int expValue, int maxExpValue)

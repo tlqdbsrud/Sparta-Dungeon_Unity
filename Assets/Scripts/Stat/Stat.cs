@@ -11,7 +11,7 @@ public class Stat : MonoBehaviour
     protected int attack = 35; // 공격력
     protected int defense = 40; // 방어력
     protected int blow = 25; // 치명타
-    protected int exp = 9; // 경험치
+    protected int exp = 8; // 경험치
     protected int maxExp = 12; // 최대 경험치
     protected int gold = 20000; // 돈
 
